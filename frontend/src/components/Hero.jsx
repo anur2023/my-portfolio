@@ -1,5 +1,4 @@
-import profilePhoto from "../assets/portfolio-photo.png";
-
+const PHOTO_SRC = "/portfolio-photo.png";
 const PHOTO_FALLBACK =
   "https://avatars.githubusercontent.com/u/154400979?v=4&s=400";
 
@@ -51,13 +50,13 @@ export function Hero({ profile }) {
             </a>
           </div>
         </div>
-        <div className="hero__visual stagger">
+        <div className="hero__visual">
           <div className="hero__avatar-float">
             <div className="hero__avatar-shell">
               <div className="hero__avatar-inner">
                 <img
-                  src={profilePhoto}
-                  alt="Portrait of Anuruddh Kumar"
+                  src={PHOTO_SRC}
+                  alt={`Portrait of ${profile.name}`}
                   className="hero__photo"
                   width={280}
                   height={280}
@@ -66,6 +65,7 @@ export function Hero({ profile }) {
                   onError={(e) => {
                     if (e.currentTarget.src !== PHOTO_FALLBACK) {
                       e.currentTarget.src = PHOTO_FALLBACK;
+                      e.currentTarget.onerror = null;
                     }
                   }}
                 />
@@ -289,15 +289,23 @@ export function Hero({ profile }) {
           background: var(--bg-elevated);
           animation: avatar-ring-spin 12s linear infinite reverse;
           border: 3px solid var(--bg-elevated);
+          box-shadow:
+            inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+            inset 0 -24px 44px rgba(15, 23, 42, 0.2);
         }
         .hero__photo {
           width: 100%;
           height: 100%;
           display: block;
           object-fit: cover;
-          /* Head-and-shoulders portrait: keep face centered in the circle */
-          object-position: center 22%;
-          transform: scale(1.02);
+          /* Passport-style portrait: slightly top-focused crop feels balanced */
+          object-position: center 18%;
+          transform: scale(1.07);
+          filter: saturate(1.05) contrast(1.04);
+          transition: transform 300ms ease;
+        }
+        .hero__avatar-float:hover .hero__photo {
+          transform: scale(1.1);
         }
         .hero__avatar-glow {
           position: absolute;
