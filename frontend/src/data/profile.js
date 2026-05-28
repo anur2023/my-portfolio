@@ -1,0 +1,375 @@
+/** Site content — mirrored by Spring Boot `/api/profile` */
+export const profile = {
+  name: "Anuruddh Kumar",
+  tagline: "Software Engineer · React & Spring Boot",
+  location: "Kanpur, Uttar Pradesh, India",
+  email: "anuruddh209401@gmail.com",
+  phone: "+91-6392508854",
+  linkedin: "https://linkedin.com/in/anuruddh-kumar",
+  github: "https://github.com/anur2023",
+  summary:
+    "Software Engineer at HCL Technologies building scalable full-stack Java and web applications. Proficient in Java, Spring Boot, REST APIs, React.js, and MySQL. Hands-on with AI/ML — NLP pipelines, LLM chatbots, fraud detection, and recommendation systems. Experienced in Docker, Azure CI/CD, and performance optimization.",
+  experience: [
+    {
+      role: "Software Engineer",
+      company: "HCL Technologies",
+      period: "Jan 2026 – Present",
+      stack: "Java · Spring Boot · REST · MySQL · Spring Security · Microservices",
+      highlights: [
+        "Java & Spring Boot training: REST APIs, microservices, Spring Security, Hibernate/JPA.",
+        "Doctor Appointment Management System (hackathon): booking, availability, coordination — Spring Boot + MySQL.",
+        "REST APIs with RBAC; code reviews and performance optimization under concurrent load.",
+      ],
+    },
+    {
+      role: "CS Tutor (Freelance)",
+      company: "Filo",
+      period: "Apr 2022 – Present",
+      stack: "DSA · OOP · DBMS · Web fundamentals",
+      highlights: [
+        "1,000+ live one-on-one CS sessions across India.",
+        "Structured explanations tailored to each learner.",
+      ],
+    },
+  ],
+  projects: [
+    {
+      slug: "medicine-recommendation-system",
+      title: "Medicine Recommendation System",
+      subtitle: "Health · supervised learning",
+      category: "Machine Learning",
+      description:
+        "Recommends medicines from symptoms or conditions using ML — a practical healthcare analytics project on GitHub.",
+      stack: "Python · Scikit-learn · Pandas · Flask",
+      repoUrl: "https://github.com/anur2023/Medicine-Recommendation-System",
+      detail: {
+        overview:
+          "This project explores how classical machine learning can support safer, faster triage-style suggestions by mapping patient-described symptoms to likely medicine categories. It is intended as a learning and portfolio piece aligned with data-science coursework and healthcare ML interest.",
+        problem:
+          "Choosing appropriate medication without a full clinical workflow is error-prone; the goal is to demonstrate data pipelines and models, not replace doctors.",
+        solution:
+          "Structured datasets are cleaned and encoded; models such as classifiers rank candidate labels; a simple app or script layer exposes predictions for demos.",
+        features: [
+          "Dataset ingestion and preprocessing for symptom–label pairs",
+          "Training and evaluation of scikit-learn models with clear metrics",
+          "Repeatable notebook or script workflow for experiments",
+          "Optional lightweight UI or API surface for local demos",
+        ],
+        tech: ["Python", "NumPy", "Pandas", "Scikit-learn", "Flask", "Jupyter"],
+        highlights: [
+          "Pinned on your GitHub profile — strong visibility for recruiters",
+          "Shows end-to-end ML hygiene: split, train, validate, document",
+        ],
+      },
+    },
+    {
+      slug: "ml-projects-series",
+      title: "ML Projects Series",
+      subtitle: "Notebooks · experiments · banking & fraud ideas",
+      category: "Machine Learning",
+      description:
+        "A curated series of Jupyter notebooks and scripts covering classification, regression, and analytics patterns used across portfolio work.",
+      stack: "Jupyter · Python · Scikit-learn",
+      repoUrl: "https://github.com/anur2023/ML_projects_Series",
+      detail: {
+        overview:
+          "This repository bundles machine-learning experiments and reusable patterns — from exploratory analysis to model training — that support projects like risk scoring, customer analytics, and teaching demos.",
+        features: [
+          "Multiple self-contained notebooks for different problem types",
+          "Feature engineering and evaluation examples",
+          "Code you can extend for Bank Buddy–style fraud or eligibility ideas",
+        ],
+        tech: ["Python", "Jupyter", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
+        highlights: [
+          "Central place to show depth in ML beyond a single Kaggle-style task",
+          "Easy to link from your portfolio as “see the notebooks” proof",
+        ],
+      },
+    },
+    {
+      slug: "fake-news-predictor",
+      title: "Fake News Predictor",
+      subtitle: "NLP · text classification",
+      category: "Machine Learning",
+      description:
+        "Binary or multi-class models that flag unreliable news-style text — NLP feature extraction plus classical or neural baselines.",
+      stack: "Python · NLP · Scikit-learn",
+      repoUrl: "https://github.com/anur2023/Fake_News_Predictor",
+      detail: {
+        overview:
+          "Misinformation detection is a standard NLP benchmark. This project demonstrates text preprocessing, vectorization (TF–IDF or similar), and supervised classifiers tuned for readability and recall/precision trade-offs.",
+        features: [
+          "Text cleaning, tokenization, and vectorization pipeline",
+          "Model comparison with confusion matrix and metrics",
+          "Modular code for swapping algorithms or datasets",
+        ],
+        tech: ["Python", "NLTK / scikit-learn NLP utilities", "Pandas", "NumPy"],
+        highlights: [
+          "Strong interview story: data leakage, class imbalance, evaluation",
+          "Pairs well with your broader NLP and analytics narrative",
+        ],
+      },
+    },
+    {
+      slug: "health-care-with-machine-learning",
+      title: "Health Care with Machine Learning",
+      subtitle: "Clinical-style datasets · prediction",
+      category: "Machine Learning",
+      description:
+        "Healthcare-focused ML experiments — risk markers, readmission-style problems, or diagnostic support patterns using public datasets.",
+      stack: "Python · Pandas · Scikit-learn",
+      repoUrl: "https://github.com/anur2023/Health_Care_With_Machine_Learning_Project",
+      detail: {
+        overview:
+          "Applies supervised learning to health-related tabular data: careful handling of missing values, categorical encoding, and ethics-aware evaluation suitable for portfolio discussion.",
+        features: [
+          "EDA tailored to medical-style features",
+          "Baseline vs tuned model comparison",
+          "Documentation of assumptions and limitations",
+        ],
+        tech: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
+        highlights: [
+          "Demonstrates domain-aware ML communication — critical for HCL/health clients",
+        ],
+      },
+    },
+    {
+      slug: "text-summarizer-nlp-project",
+      title: "Text Summarizer (NLP)",
+      subtitle: "Extractive / abstractive experiments",
+      category: "NLP",
+      description:
+        "Summarization pipelines for long articles or transcripts — useful for compliance, tutoring, or chatbot context windows.",
+      stack: "Python · Jupyter · NLP",
+      repoUrl: "https://github.com/anur2023/Text-Summerizer-NLP-Project",
+      detail: {
+        overview:
+          "Summarization combines sequence understanding with practical constraints (length, fidelity). The repo shows how you approach NLP projects end-to-end in notebook form.",
+        features: [
+          "Preprocessing and sentence scoring for extractive baselines",
+          "Room to plug transformer-based models as a stretch goal",
+          "Evaluation discussion: ROUGE-style intuition for non-experts",
+        ],
+        tech: ["Python", "Jupyter Notebook", "NLP libraries"],
+        highlights: [
+          "Aligns with Filo-style transcription and content workflows",
+        ],
+      },
+    },
+    {
+      slug: "nlp-projects",
+      title: "NLP Projects",
+      subtitle: "Collection of language tasks",
+      category: "NLP",
+      description:
+        "A hub repo for smaller NLP exercises — intent patterns, tokenization demos, and text-classification prototypes.",
+      stack: "Python · NLP",
+      repoUrl: "https://github.com/anur2023/nlp_Projects",
+      detail: {
+        overview:
+          "Aggregates bite-sized NLP work so collaborators and interviewers can browse patterns quickly without cloning many repos.",
+        features: [
+          "Modular scripts or notebooks per task",
+          "Reusable preprocessing helpers",
+          "Clear naming for portfolio navigation",
+        ],
+        tech: ["Python", "NLP stack", "Pandas"],
+        highlights: [
+          "Complements Fake News and Summarizer with breadth",
+        ],
+      },
+    },
+    {
+      slug: "machine-learning",
+      title: "Machine Learning",
+      subtitle: "Core algorithms & practice",
+      category: "Machine Learning",
+      description:
+        "Foundational ML code — regression, classification, clustering — showcasing your grasp of algorithms before shipping apps.",
+      stack: "Python · Scikit-learn",
+      repoUrl: "https://github.com/anur2023/Machine_Learning",
+      detail: {
+        overview:
+          "Demonstrates structured practice with classical ML: from linear models to trees and ensembles, with emphasis on validation and interpretation.",
+        features: [
+          "Hands-on assignments and experiments",
+          "Visualizations for learning curves and decision boundaries where applicable",
+        ],
+        tech: ["Python", "Scikit-learn", "NumPy", "Pandas"],
+        highlights: [
+          "Supports your “Data Science student + ML passion” GitHub README story",
+        ],
+      },
+    },
+    {
+      slug: "visual-product-matcher",
+      title: "Visual Product Matcher",
+      subtitle: "JS · similarity / ranking UI",
+      category: "ML · Web",
+      description:
+        "JavaScript-side exploration for matching or ranking product-like items — bridges ML thinking with interactive UI.",
+      stack: "JavaScript · HTML/CSS",
+      repoUrl: "https://github.com/anur2023/Visual_Product_matcher",
+      detail: {
+        overview:
+          "Connects lightweight front-end interaction with matching logic — useful to show you can ship user-facing prototypes, not only notebooks.",
+        features: [
+          "Component-style UI for trying matches",
+          "Clear separation between data and presentation",
+        ],
+        tech: ["JavaScript", "HTML", "CSS"],
+        highlights: [
+          "Shows breadth beyond Python ML backends",
+        ],
+      },
+    },
+    {
+      slug: "tutee",
+      title: "Tutee — Teaching Platform",
+      subtitle: "Java · full-stack learning system",
+      category: "Full-stack",
+      description:
+        "End-to-end tutoring platform codebase — sessions, users, and APIs — aligned with your one-to-one teaching product experience.",
+      stack: "Java · Spring · MySQL",
+      repoUrl: "https://github.com/anur2023/tutee",
+      detail: {
+        overview:
+          "A substantial Java repository representing scheduling, coordination, and service layers for an education product. Ideal to discuss architecture, testing, and deployment in interviews.",
+        features: [
+          "Layered backend structure",
+          "Persistence and API boundaries",
+          "Scalable patterns for concurrent tutoring workloads",
+        ],
+        tech: ["Java", "Spring ecosystem", "MySQL", "REST"],
+        highlights: [
+          "Directly supports your Filo tutor + platform story",
+        ],
+      },
+    },
+    {
+      slug: "javafs",
+      title: "JavaFS",
+      subtitle: "Full-stack Java curriculum codebase",
+      category: "Java · Backend",
+      description:
+        "Large Java codebase for full-stack coursework — APIs, persistence, and integration patterns you extend in team settings.",
+      stack: "Java · Spring Boot · Maven",
+      repoUrl: "https://github.com/anur2023/JavaFS",
+      detail: {
+        overview:
+          "Demonstrates depth in enterprise-style Java: multi-module layout, configuration, and services that mirror what you use at HCL.",
+        features: [
+          "Hands-on modules for REST and data access",
+          "Team-friendly structure for code review practice",
+        ],
+        tech: ["Java", "Spring Boot", "Maven", "SQL"],
+        highlights: [
+          "Strong signal for Java hiring managers scanning GitHub",
+        ],
+      },
+    },
+    {
+      slug: "anuruddh-medical-center",
+      title: "Medical Center Appointments",
+      subtitle: "Spring Boot · hackathon",
+      category: "Backend",
+      description:
+        "Doctor appointment booking and availability — mirrors your internal hackathon project: coordination between patients and providers.",
+      stack: "Java · Spring Boot · MySQL",
+      repoUrl: "https://github.com/anur2023/anuruddh-medical-center",
+      detail: {
+        overview:
+          "Focused service design for slots, bookings, and roles — a concise showcase of Spring Boot skills with a real-world domain.",
+        features: [
+          "REST resources for appointments",
+          "Role-based flows for doctors vs patients",
+          "Validation and error handling suitable for demos",
+        ],
+        tech: ["Spring Boot", "MySQL", "Spring Security concepts"],
+        highlights: [
+          "Pairs with your HCL hackathon narrative",
+        ],
+      },
+    },
+    {
+      slug: "live-transcribe-audio-into-text",
+      title: "Live Transcribe — Audio to Text",
+      subtitle: "Python · speech & NLP pipelines",
+      category: "ML · Audio",
+      description:
+        "Audio ingestion and transcription-oriented scripts — aligned with NLP transcription and compliance-style analytics experience.",
+      stack: "Python · Audio processing",
+      repoUrl: "https://github.com/anur2023/Live_transcribe_audio_into_text",
+      detail: {
+        overview:
+          "Demonstrates working with audio inputs and converting streams or files to text for downstream NLP — relevant to quality, tutoring, and analytics pipelines.",
+        features: [
+          "Chunking and preprocessing for audio",
+          "Integration path to text NLP steps",
+          "Logging and reproducibility for long runs",
+        ],
+        tech: ["Python", "Audio libs", "NLP preprocessing"],
+        highlights: [
+          "Connects to your Filo internship audio/NLP storyline",
+        ],
+      },
+    },
+  ],
+  skills: [
+    {
+      category: "Languages",
+      items: ["Python", "Java", "JavaScript (ES6+)"],
+    },
+    {
+      category: "Backend",
+      items: [
+        "Spring Boot",
+        "Spring Security",
+        "REST",
+        "JWT",
+        "Hibernate/JPA",
+        "Node.js",
+        "Express",
+        "Django",
+      ],
+    },
+    {
+      category: "Frontend",
+      items: ["React.js", "Redux", "HTML5", "CSS3", "Responsive UI"],
+    },
+    {
+      category: "Data & AI",
+      items: [
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "Scikit-learn",
+        "NLP",
+        "ETL",
+        "Power BI",
+      ],
+    },
+    {
+      category: "Cloud & DevOps",
+      items: ["Docker", "Kubernetes", "Azure CI/CD", "AWS (basics)"],
+    },
+  ],
+  education: [
+    {
+      degree: "B.Tech, Computer Science (Data Science)",
+      school: "Pranveer Singh Institute of Technology, Kanpur",
+      period: "2022 – 2026 (Expected)",
+      detail: "75%",
+    },
+    {
+      degree: "B.Sc. (Mathematics)",
+      school: "Sri Narain Singh Mahavidyalaya, Bhitargaon, Kanpur",
+      period: "2019 – 2022",
+      detail: "70%",
+    },
+  ],
+  certifications: [
+    "Data Science, Machine Learning & NLP — Udemy (2025)",
+    "Python & Java Full Stack Development — Infyspringboard (2024)",
+  ],
+};
