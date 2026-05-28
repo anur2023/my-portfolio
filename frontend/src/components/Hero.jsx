@@ -1,4 +1,4 @@
-import profilePhoto from "../assets/profile.png";
+import profilePhoto from "../assets/portfolio-photo.png";
 
 const PHOTO_FALLBACK =
   "https://avatars.githubusercontent.com/u/154400979?v=4&s=400";
