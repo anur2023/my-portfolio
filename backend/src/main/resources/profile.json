@@ -32,6 +32,50 @@
   ],
   "projects": [
     {
+      "slug": "smart-email-classification-and-routing",
+      "title": "Smart Email Classification and Routing",
+      "subtitle": "NLP · ML microservices · Kanban dashboard",
+      "category": "Full-stack · NLP",
+      "description": "Automates customer-support email triage — NLP preprocessing, dual Naive Bayes classifiers for category and priority, and a React Kanban dashboard backed by Spring Boot and FastAPI.",
+      "stack": "Python · FastAPI · Spring Boot · React · scikit-learn · NLTK · spaCy",
+      "repoUrl": "https://github.com/anur2023/AgenticAILearning/tree/main/Phase2/Small_Email_Classification_And_Routing",
+      "detail": {
+        "overview": "A production-style, three-tier system that reads incoming customer emails, understands intent, and routes them automatically. Raw text flows through a six-step NLP pipeline (cleaning, tokenization, stopword removal, lemmatization, POS tagging, and NER), then through TF-IDF vectorization into two Multinomial Naive Bayes models — one for category (7 classes) and one for priority (Critical / High / Medium / Low). Results land on a React Kanban dashboard, sorted by urgency within each category column, with persistence via a Spring Boot REST API.",
+        "problem": "Support teams handling hundreds of daily emails face slow manual triage, inconsistent routing, mis-prioritization of urgent issues, and scaling limits as volume grows — agents spend time reading and sorting instead of resolving.",
+        "solution": "A Python FastAPI ML microservice (port 8000) handles preprocessing and inference; a Java Spring Boot API (port 8081) orchestrates classification, persists emails to JSON, and exposes REST endpoints; a React + Vite frontend (port 5173) provides a real-time Kanban board. The ML layer trains on 5,100 labeled support emails with an 80/20 stratified split, achieving 100% category accuracy on the test set and ~57% priority accuracy — expected given subjective priority labels.",
+        "features": [
+          "Six-step NLP pipeline: lowercase cleaning, tokenization, stopword removal, lemmatization, POS tagging, and spaCy NER",
+          "TF-IDF vectorization (579 features) feeding dual Multinomial Naive Bayes classifiers for category and priority",
+          "FastAPI `/predict` endpoint returning category, confidence, priority, and processed text",
+          "Spring Boot REST API: classify, list, group-by-category, and delete emails with priority-aware sorting",
+          "React Kanban dashboard — seven category columns with color-coded priority badges and live routing feedback",
+          "Persistent storage with atomic ID sequencing; Critical emails always surface at the top of each column",
+          "Evaluated Naive Bayes, Logistic Regression, Linear SVM, and Random Forest — NB chosen for speed and probabilistic output"
+        ],
+        "tech": [
+          "Python",
+          "FastAPI",
+          "Uvicorn",
+          "scikit-learn",
+          "NLTK",
+          "spaCy",
+          "joblib",
+          "Spring Boot",
+          "Java",
+          "Maven",
+          "React 19",
+          "Vite",
+          "Jackson (JSON)"
+        ],
+        "highlights": [
+          "End-to-end story: raw text → NLP → ML → REST → dashboard — mirrors enterprise microservice patterns",
+          "Strong interview depth on TF-IDF, Naive Bayes assumptions, train/test splits, and honest accuracy trade-offs",
+          "Demonstrates full-stack skills aligned with HCL work: Spring Boot APIs, React UI, and Python ML services",
+          "Clear future scope documented: BERT fine-tuning, sentiment integration, PostgreSQL, JWT auth, and Docker deployment"
+        ]
+      }
+    },
+    {
       "slug": "medicine-recommendation-system",
       "title": "Medicine Recommendation System",
       "subtitle": "Health · supervised learning",

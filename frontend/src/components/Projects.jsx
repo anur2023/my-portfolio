@@ -7,7 +7,7 @@ export function Projects({ profile }) {
       <div className="container">
         <h2 className="section-title">Projects</h2>
         <p className="section-lead">
-          Twelve builds from{" "}
+          {profile.projects.length} builds from{" "}
           <a
             href="https://github.com/anur2023"
             target="_blank"
