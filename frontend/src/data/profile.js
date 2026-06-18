@@ -8,7 +8,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/anuruddh-kumar",
   github: "https://github.com/anur2023",
   summary:
-    "Software Engineer at HCL Technologies building scalable full-stack Java and web applications. Proficient in Java, Spring Boot, REST APIs, React.js, and MySQL. Hands-on with AI/ML — NLP pipelines, LLM chatbots, fraud detection, and recommendation systems. Experienced in Docker, Azure CI/CD, and performance optimization.",
+    "Software Engineer at HCL Technologies building scalable full-stack Java and web applications. Proficient in Java, Spring Boot, REST APIs, React.js, and MySQL. Hands-on with agentic AI — LLM chatbots (Gemini), Spring AI, NLP microservices, and full-stack ML apps documented in my Agentic AI Learning journey. Experienced in Docker, Azure CI/CD, and performance optimization.",
   experience: [
     {
       role: "Software Engineer",
@@ -33,6 +33,54 @@ export const profile = {
     },
   ],
   projects: [
+    {
+      slug: "agentic-ai-learning",
+      title: "Agentic AI Learning",
+      subtitle: "Phased journey · LLMs · NLP · Java + AI",
+      category: "AI / ML · Learning Hub",
+      description:
+        "Structured repo tracking my agentic AI progress — Gemini chatbot foundations (Phase 1), full-stack NLP apps (Phase 2), and Java + Spring AI integration (Phase 3).",
+      stack:
+        "Python · Flask · FastAPI · Spring Boot · React · Gemini · Spring AI · Hugging Face · spaCy",
+      repoUrl: "https://github.com/anur2023/AgenticAILearning",
+      detail: {
+        overview:
+          "A phased learning repository that documents building real AI applications from first principles to production-style microservices. Phase 1 starts with a Gemini-powered chat app (Flask + vanilla JS). Phase 2 ships four NLP projects — procurement contract analysis, commodity trade risk extraction, email classification & routing, and foundational NLP notebooks. Phase 3 bridges Java enterprise stacks with LLMs via Spring AI, Hugging Face, and demo integrations.",
+        problem:
+          "AI skills are best shown through incremental, documented builds — not one-off demos. I needed a single hub that recruiters and interviewers could browse to see how I progress from API basics to multi-tier NLP systems and Java-LLM integration.",
+        solution:
+          "Organized work into three phases with README-driven documentation, repeatable startup scripts, and consistent architecture patterns (React → Spring Boot → Python FastAPI ML service) reused across Phase 2 capstones.",
+        features: [
+          "Phase 1 — Gemini Chat App: Flask REST API, google-genai SDK, CORS-enabled `/chat` endpoint, dark-themed vanilla JS UI with typing animation",
+          "Phase 2 — Procurement Contract Analyzer: OCR + NER + T5 summarization; upload PDF/DOCX, extract supplier, price, delivery, payment terms",
+          "Phase 2 — Commodity Trade Risk Extractor: spaCy NER, BART zero-shot risk typing, DistilBERT sentiment — structured trade risk JSON from news",
+          "Phase 2 — Email Classification & Routing: dual Naive Bayes classifiers, Kanban dashboard, Spring Boot + FastAPI microservices",
+          "Phase 2 — NLP notebooks: tokenization, POS tagging, NER, sentiment analysis, and text classification pipelines",
+          "Phase 3 — Java + LLMs Setup: Spring AI demos, Hugging Face integration, and enterprise-ready LLM wiring patterns",
+        ],
+        tech: [
+          "Python",
+          "Flask",
+          "FastAPI",
+          "Google Gemini 2.5 Flash",
+          "Spring Boot",
+          "Spring AI",
+          "React",
+          "Vite",
+          "spaCy",
+          "Hugging Face (BART, DistilBERT, T5)",
+          "scikit-learn",
+          "Jupyter Notebook",
+          "Tesseract OCR",
+        ],
+        highlights: [
+          "Single GitHub hub for the full agentic AI story — easy to share in interviews and on LinkedIn",
+          "Reusable three-tier pattern (React → Spring Boot → FastAPI) across multiple Phase 2 apps",
+          "Shows progression: chatbot APIs → document NLP → classification → Java-LLM enterprise integration",
+          "18+ commits with living documentation — actively maintained learning journal",
+        ],
+      },
+    },
     {
       slug: "smart-email-classification-and-routing",
       title: "Smart Email Classification and Routing",
@@ -79,6 +127,7 @@ export const profile = {
           "Strong interview depth on TF-IDF, Naive Bayes assumptions, train/test splits, and honest accuracy trade-offs",
           "Demonstrates full-stack skills aligned with HCL work: Spring Boot APIs, React UI, and Python ML services",
           "Clear future scope documented: BERT fine-tuning, sentiment integration, PostgreSQL, JWT auth, and Docker deployment",
+          "Phase 2 capstone inside Agentic AI Learning — browse the parent repo for Phase 1 (Gemini chat) and Phase 3 (Java + Spring AI)",
         ],
       },
     },
@@ -394,6 +443,9 @@ export const profile = {
         "Redis",
         "Scikit-learn",
         "NLP",
+        "LLMs (Gemini)",
+        "Spring AI",
+        "Hugging Face",
         "ETL",
         "Power BI",
       ],

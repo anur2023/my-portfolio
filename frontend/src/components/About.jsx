@@ -7,8 +7,8 @@ export function About({ profile }) {
         <h2 className="section-title">About</h2>
         <p className="section-lead">
           Full-stack engineer focused on clean APIs, solid React UIs, and
-          practical AI features — from NLP pipelines to production Spring Boot
-          services.
+          agentic AI — from Gemini chatbots and NLP microservices to production
+          Spring Boot + Spring AI services.
         </p>
         <div className="about-grid">
           <div className="card about-card">
